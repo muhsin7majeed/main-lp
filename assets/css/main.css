@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  color: #2b2b2b;
+}
+
+.container {
+  margin: 0 8%;
+}
+
+.nav {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .logo {
+  font-weight: 500;
+}
+
+.nav ul li {
+  display: inline;
+  opacity: .7;
+  padding-left: 10px;
+}
+
+.nav ul li:hover {
+  opacity: 1;
+}
+
+.nav i {
+  display: none;
+}
+
+.home {
+  min-height: 400px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.home .arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 36px;
+}
+
+.heroText {
+  margin-top: -80px;
+  font-size: 32px;
+}
+
+.heroText .light {
+  font-weight: 300;
+}
+
+.heroText .and {
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about .aboutHero {
+  width: 80%;
+}
+
+.about .subHead {
+  font-size: 28px;
+  opacity: .9;
+  padding-bottom: 30px;
+}
+
+.about .aboutStyle {
+  font-size: 26px;
+}
+
+.skillStyle {
+  font-size: 22px;
+}
+
+.skillStyle ul {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.skillStyle ul b {
+  display: block;
+  opacity: .9;
+}
+
+.skillStyle li {
+  display: inline;
+  margin: 10px;
+  margin-left: 20px;
+  line-height: 30px;
+  opacity: .7;
+}
+
+.skillStyle li:hover {
+  opacity: 1;
+}
+
+.ruler {
+  margin: 40px 0;
+  width: 60%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.footer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer i {
+  color: red;
+}
+
+.contactMe {
+  margin: 80px;
+  font-size: 32px;
+}
+
+.contactMe ul {
+  text-align: center;
+}
+
+.contactMe ul li {
+  display: inline;
+  margin: 20px 10px;
+}
+
+.contactMe ul li i {
+  opacity: .8;
+}
+
+.contactMe ul li .fa-facebook:hover {
+  color: #4c40ff;
+  opacity: 1;
+}
+
+.contactMe ul li .fa-instagram:hover {
+  color: #ca0799;
+  opacity: 1;
+}
+
+.contactMe ul li .fa-linkedin:hover {
+  color: #0603c9;
+  opacity: 1;
+}
+
+.contactMe ul li .fa-github:hover {
+  color: #252525;
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav i {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .mobNav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navOn {
+    display: block;
+  }
+  .navOn ul {
+    margin-top: 20px;
+    display: block;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .navOn ul li {
+    display: block;
+    margin: 1px;
+    padding: 10px 0;
+  }
+  .home {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: left;
+  }
+  .heroText {
+    font-size: 22px;
+  }
+  .heroText .and {
+    display: block;
+  }
+  .heroText .headBr {
+    display: none;
+  }
+  .about {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: left;
+  }
+  .about .aboutHero {
+    width: 100%;
+  }
+  .skillStyle {
+    font-size: 22px;
+  }
+  .skillStyle li {
+    margin: 0;
+    padding: 0;
+    opacity: .9;
+  }
+  .contactMe {
+    margin: 40px 0;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

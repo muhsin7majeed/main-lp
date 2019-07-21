@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  color: #2b2b2b;
+}
+
+.container {
+  margin: 0 8%;
+}
+
+.nav {
+  .logo {
+    font-weight: 500;
+  }
+
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    li {
+      display: inline;
+      opacity: .7;
+      padding-left: 10px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  i {
+    display: none
+  }
+}
+
+.home {
+  min-height: 400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 36px;
+  }
+}
+
+
+.heroText {
+  margin-top: -80px;
+  font-size: 32px;
+
+  .light {
+    font-weight: 300;
+
+  }
+
+  .and {
+    font-weight: 100;
+    font-size: 22px;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .aboutHero {
+    width: 80%;
+  }
+
+  .subHead {
+    font-size: 28px;
+    opacity: .9;
+    padding-bottom: 30px;
+  }
+
+  .aboutStyle {
+    font-size: 26px;
+  }
+
+
+}
+
+.skillStyle {
+  font-size: 22px;
+
+  ul {
+    margin: 20px 0;
+    text-align: left;
+
+    b {
+      display: block;
+      opacity: .9;
+    }
+  }
+
+  li {
+    display: inline;
+    margin: 10px;
+    margin-left: 20px;
+    line-height: 30px;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.ruler {
+  margin: 40px 0;
+  width: 60%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  i {
+    color: red;
+  }
+}
+
+.contactMe {
+  margin: 80px;
+  font-size: 32px;
+
+  ul {
+    text-align: center;
+
+    li {
+      display: inline;
+      margin: 20px 10px;
+
+      i {
+        opacity: .8;
+
+      }
+
+      .fa-facebook:hover {
+        color: rgb(76, 64, 255);
+        opacity: 1;
+      }
+      .fa-instagram:hover {
+        color: rgb(202, 7, 153);
+        opacity: 1;
+      }
+      .fa-linkedin:hover {
+        color: rgb(6, 3, 201);
+        opacity: 1;
+      }
+      .fa-github:hover {
+        color: rgb(37, 37, 37);
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      transition: 1s linear;
+
+    }
+
+
+  }
+
+  .mobNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .navOn {
+    display: block;
+
+
+
+    ul {
+      margin-top: 20px;
+      display: block;
+      transition: 1s linear;
+
+      li {
+        display: block;
+        margin: 1px;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .home {
+    justify-content: start;
+    text-align: left;
+  }
+
+  .heroText {
+    font-size: 22px;
+
+    .and {
+      display: block;
+    }
+
+    .headBr {
+      display: none;
+    }
+  }
+
+  .about {
+    justify-content: start;
+    text-align: left;
+
+    .aboutHero {
+      width: 100%;
+    }
+  }
+
+  .skillStyle {
+
+    font-size: 22px;
+
+    li {
+      margin: 0;
+      padding: 0;
+      opacity: .9;
+    }
+  }
+.contactMe{
+  margin: 40px 0;
+  font-size: 24px;
+}
+}

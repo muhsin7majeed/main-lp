@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+
+    <title>Muhsin</title>
+</head>
+<script>
+    function navToggle(){
+        var x = document.getElementById("nav");
+        if (x.className === "nav"){
+            x.classList.toggle("navOn");
+        }
+        else {
+            x.className = "nav"
+        }
+    }
+</script>
+<body><div class="container">
+    <header>
+        
+        <nav id="nav" class="nav">
+            <div class="mobNav">
+                <a class="logo" href="#">MUHSIN</a>
+                <i onclick="navToggle()" class="toggler fas fa-bars"></i>
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.github.com/muhsin7majeed">Github</a></li>
+            </ul>
+        </nav>
+        <div class="clear-fix"></div>
+    </header>
+    
+    <div class="home" id="home">
+        <div class="heroText">
+            <h1><span class="light">Front</span>End <span class="and">and a bit of</span><br class="headBr"><span class="light">Back</span>End</h1>
+        </div>
+        <a href="#about" class="arrow"><i class="fas fa-angle-down"></i></a>
+    </div>
+
+    <div class="about" id="about">
+        <div class="aboutHero">
+            <h3 class="subHead">Who am I ?</h3>
+            <p class="aboutStyle">
+                Hey there..
+                I’m <b>Muhsin</b> , a motivated web developer. I usually work in front-end, with html, css, javascript and  react, bootstrap, node, express. I loves to learn new things and improve my skills to keep up with current techs.
+                <hr class="ruler">
+                <div class="skill">
+                    <h3 class="subHead"> Skills ?</h3>
+                    <div class="skillStyle">
+                        
+                        <ul>
+                            <b>Foundation :  </b>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                        </ul>
+                        <ul>
+                            <b>Frameworks / Libraries and DBs : </b>
+                                <li>SCSS</li>
+                                <li>Bootstrap , Materialize CSS</li>
+                                <li>jQuery</li>
+                                <li>React-Js</li>
+                                <li>Express-Js</li>
+                                <li>Node-Js</li>
+                                <li>LoopBack</li>
+                                <li>MongoDB</li>
+
+                        </ul>
+                        <ul>
+                            <b>Operating Systems and Tools I used : </b>
+                                <li>Linux (preferred)</li>
+                                <li>Windows</li>
+                                <li>Figma / Adobe XD</li>
+                                <li>Jekyll</li>
+                                <li>Git / Github</li>
+                                <li>VS Code / SubLime Text</li>
+                        </ul>
+                        <ul>
+                            <b>Basic knowledges in  : </b>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+        </p>
+        </div>
+        
+    </div>
+
+    <div class="contactMe" id="contact">
+
+        <div class="socialIcon">
+            <ul>
+                <li><a target="_blank" class="facebook" href="https://www.facebook.com/muhsin7majeed"><i class="fab fa-facebook"></i></a></li>
+                <li><a target="_blank" class="instagram" href="https://www.instagram.com/muhsin7majeed"><i class="fab fa-instagram"></i></a></li>
+                <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/muhsin7majeed"><i class="fab fa-linkedin"></i></a></li>
+                <li><a target="_blank" class="github" href="https://www.github.com/muhsin7majeed"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+        <div class="footer">
+           <span>Made with  <i class="fas fa-heart"></i> by <a href='https://www.github.com/muhsin7majeed' >@muhsin7majeed</a></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+
+header {
+  position: relative;
+  background: white;
+  padding: 0 60px;
+}
+.toggler {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #2b2b2b;
+}
+.logo {
+  color: #2b2b2b;
+  height: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  float: left;
+  opacity: 0.8;
+}
+nav {
+  float: right;
+}
+.clear-fix {
+  clear: both;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  color: #2b2b2b;
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+    transition: 1s linear;
+    width: 100%;
+  }
+  nav ul {
+    display: block;
+  }
+  nav ul li a {
+    margin: 0;
+  }
+  .toggler {
+    display: block;
+  }
+  .navOn {
+    display: block;
+    transition: 1s linear;
+  }
+  header {
+    background: rgb(248, 248, 248);
+    padding: 0;
+  }
+}
+
+/* End of Navbar */
+
+/* Home */
+.home {
+  width: 100%;
+  min-height: 580px;
+  height: 90vh;
+  display: table;
+  position: relative;
+}
+.heroText {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+}
+.heroText h1 {
+  font-weight: 500;
+  opacity: 0.8;
+}
+.light {
+  font-weight: 300;
+  opacity: 0.9;
+}
+.and {
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 49%;
+  font-size: 38px;
+  color: #2b2b2b;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .heroText {
+    font-size: 24px;
+  }
+}
+
+/* End of Home */
+
+/* About */
+.about {
+  text-align: center;
+  padding: 0px 10px 50px 10px;
+}
+.subhead {
+  font-size: 32px;
+  opacity: 0.6;
+  margin-bottom: 25px;
+  padding-top: 50px;
+}
+.aboutStyle {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.ruler {
+  width: 25%;
+  position: relative;
+  height: 4px;
+  border: none;
+  opacity: 0.2;
+  margin: 30px auto;
+  background-color: #2b2b2b;
+}
+.skill {
+  font-size: 28px;
+  opacity: 0.6;
+  font-weight: 500;
+  margin: 50px 0 20px 0;
+}
+
+b {
+  opacity: 0.9;
+}
+/* End of about */
+
+/* Contact Me */
+.contactMe {
+  text-align: center;
+  padding: 0 10px 50px 10px;
+}
+
+input,
+textarea {
+  min-width: 250px;
+  width: 30%;
+  padding: 15px 30px;
+  border: 1px solid #2b2b2b;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.msg::after {
+  content: "(optional)";
+  opacity: 0.4;
+}
+.sub {
+  width: 150px;
+  min-width: 60px;
+  color: #2b2b2b;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+.sub:hover {
+  background-color: #2b2b2b;
+  color: white;
+  transition: 0.1s linear;
+}
+label {
+  font-size: 18px;
+  opacity: 0.8;
+  color: #2b2b2b;
+}
+textarea {
+  height: 100px;
+}
+
+.socialIcon li {
+  display: inline-block;
+  margin: 30px 0;
+}
+.socialIcon li a {
+  font-size: 28px;
+  padding: 10px;
+}
+.facebook {
+  color: rgb(76, 64, 255);
+}
+.instagram {
+  color: rgb(202, 7, 153);
+}
+.linkedin {
+  color: rgb(6, 3, 201);
+}
+.github {
+  color: rgb(37, 37, 37);
+}
+/* End of Contact Me */
+
+/* Gallery */
+.gallery {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.container {
+  position: relative;
+}
+
+.column .container:hover .overlayContent {
+  transition: 0.1s linear;
+  visibility: visible;
+}
+.column .container:hover .img {
+  transition: 0.1s linear;
+  opacity: 0.1;
+}
+.overlayContent {
+  transition: 0.1s linear;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+.gallery-btn {
+  width: 50px;
+  height: 30px;
+  padding: 10px 20px;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+  border-radius: 20px;
+}
+.btn {
+  margin: 10px;
+}
+.column img {
+  transition: 0.1s linear;
+  width: 90%;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.gallery .ruler {
+  margin-bottom: 50px;
+  width: 10%;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+}
+.footer ul li {
+  display: inline-block;
+  margin: 3px 50px;
+}
+.footer ul li a {
+  color: #2b2b2b;
+  opacity: 0.4;
+  transition: 0.2s linear;
+}
+.footer ul li a:hover {
+  opacity: 0.8;
+  transition: 0.2s linear;
+}
+.footer ul {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px;
+}
+/*  */
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    width: 100%;
+  }
+  .gallery-btn {
+    width: 30px;
+    height: 15px;
+    padding: 6px 15px;
+  }
+  .btn {
+    margin: 4px;
+  }
+  .row {
+    padding: 0 20px;
+  }
+}
+/* End of Gallery */
